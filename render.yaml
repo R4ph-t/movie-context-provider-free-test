@@ -3,7 +3,7 @@ services:
   - type: web
     name: movie-mcp-server
     runtime: node
-    plan: starter
+    plan: free
     region: oregon
     branch: main
     rootDir: backend
@@ -60,6 +60,7 @@ services:
 
  # A Key Value instance that allows only internal connections
   - type: keyvalue
+    plan: free
     name: movie-cache
     ipAllowList: [] # Only allow internal connections
 
@@ -67,7 +68,7 @@ databases:
 - name: movie-mcp-postgres
   databaseName: movie_mcp_db
   user: movie_mcp_user
-  plan: basic-256mb
+  plan: free
   region: oregon
   ipAllowList:
   - source: 0.0.0.0/0
