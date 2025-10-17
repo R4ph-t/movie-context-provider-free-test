@@ -139,6 +139,8 @@ When prompted, add these **secret** environment variables:
 
 > **\*At least one LLM API key is required** if you want to use the `get_recommendations` tool. All other features (search, watchlist, preferences, etc.) work without any LLM.
 
+> **Free tier note:** The provided Render blueprint is preconfigured so every service runs on free plans (the managed Postgres instance is free for the first 30 days). Free services spin down when idle, so the first request after a long pause may be slow or occasionally time out. Once instance is active, everything behaves normally. If you want production-like responsiveness, bump the services to Starter or Standard plans.
+
 Click **Apply** and Render will:
 - ✅ Provision a PostgreSQL database
 - ✅ Provision a Valkey cache (for performance)
