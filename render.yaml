@@ -73,4 +73,3 @@ databases:
   - source: 0.0.0.0/0
     description: everywhere
   postgresMajorVersion: "17"
-  diskSizeGB: 15
