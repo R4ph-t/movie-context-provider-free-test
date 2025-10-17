@@ -8,8 +8,7 @@ services:
     branch: main
     rootDir: backend
     buildCommand: npm ci && npm run build
-    preDeployCommand: npm run migrate
-    startCommand: npm start
+    startCommand: npm run start:deploy
     healthCheckPath: /health
     envVars:
       - key: NODE_ENV
