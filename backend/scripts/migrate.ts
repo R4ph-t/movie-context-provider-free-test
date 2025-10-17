@@ -89,6 +89,7 @@ async function migrate() {
       const serverUrl = process.env.RENDER_EXTERNAL_URL || 'https://your-server.onrender.com';
       console.log(`   Connection URL: ${serverUrl}/mcp/messages`);
       console.log(`   API Key (Bearer token): ${adminApiKey}`);
+      console.log(`   OpenAI App MCP URL: ${serverUrl}/mcp/messages?api_key=${adminApiKey}`);
     } else {
       console.log('\n⚠️  No ADMIN_API_KEY set - no admin user created');
       console.log('   Set ADMIN_API_KEY to automatically create an admin user on deployment');
